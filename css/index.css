@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+header {
+    background-color: white;
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+}
+
+.Head-container {
+    text-align: center;
+    margin: 24vh auto;
+    height: 100%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+/*Pance Private School explain*/
+.title {
+    display: inline-block;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    /* 文字列を折り返さないようにする */
+}
+
+.title-description {
+    font-weight: 400;
+}
+
+.title-description h1 {
+    margin-top: 5vh;
+    font-size: 2em;
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    width: auto;
+    margin: 5vh 15%;
+    border-radius: 15px;
+}
+
+@media (max-width: 1361px) {
+    .title {
+        white-space: normal;
+        /* 幅が1361px以下ではテキストを折り返す */
+    }
+
+    .title-description h1 {
+        word-break: break-all;
+        /* 単語を一気に改行する */
+    }
+}
+
+/* メディアクエリ 1200px */
+@media only screen and (max-width: 1231px) {
+    .nav-display-none {
+        display: none !important;
+    }
+
+    .nav-display {
+        display: block !important;
+    }
+
+    .overlay-content {
+        margin-top: 13vh !important;
+    }
+}
+
+/* メディアクエリ 680px */
+@media only screen and (max-width: 680px) {
+    .nav-var-bottom-list {
+        display: none !important;
+    }
+
+    .closebtn {
+        top: 10px !important;
+        right: 50px !important;
+    }
+
+    .nav-display-last {
+        display: block !important;
+    }
+
+    .overlay-content {
+        margin-top: 13vh !important;
+    }
+}
+
+/* メディアクエリ 400px */
+@media only screen and (max-width: 400px) {
+    .nav-display-none {
+        display: none !important;
+    }
+
+    .contact {
+        margin-right: 0px;
+    }
+
+    .closebtn {
+        top: 10px !important;
+        right: 5px !important;
+    }
+
+    .Head-container {
+        margin-top: 0 !important;
+    }
+
+    .title-description h1 {
+        padding: 0 !important;
+        margin: 6% !important;
+    }
+
+    .title h1 {
+        text-align: left;
+        /* 左寄せに設定 */
+    }
+}
+
+/*overlay css*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+    background-color: #2c2c2f;
+    /* メニューの上に来るように設定 */
+}
+
+.overlay-content {
+    position: relative;
+    width: 250px;
+    text-align: center;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #e93939;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #ffffff;
+    transition: 0.3s;
+    z-index: 2000;
+    /* メニューの上に来るように設定 */
+}
+
+@media screen and (max-height: 560px) {
+    .overlay a {
+        font-size: 25px;
+        padding-top: 1%;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .overlay-content {
+        margin-top: 13vh;
+    }
+}
+
+.main {
+    display: block;
+    margin-top: 69.5px;
+}
+
+.main-overlay .overlay {
+    width: 250px;
+}
+
+.main-overlay .overlay-content {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Head-container {
+    text-align: center;
+    margin-top: 24vh;
+    height: 100%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    white-space: normal;
+    /* 文字列を折り返す */
+}
+
+.title-text {
+    opacity: 0;
+    display: inline-block;
+    margin: 0 -8px;
+}
+
+.title-description {
+    font-weight: 400;
+}
+
+.title-explain h1 {
+    margin-top: 5vh;
+    font-size: 2em;
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    width: auto;
+    margin: 5vh 15%;
+    border-radius: 15px;
+}
+
+@media (max-width: 1361px) {
+
+    .title {
+        white-space: normal;
+        /* 幅が1361px以下ではテキストを折り返す */
+    }
+
+    .title-description h1 {
+        word-break: break-word;
+        /* 単語を一気に改行する */
+    }
+}
+
+
+.design-box {
+    width: 100%;
+    height: 3.7rem;
+    background: #FF8D80;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    font-size: 3.5vw;
+    font-size: 3.5vh;
+    border-radius: 20px;
+    border-bottom: solid 10px #FF7171;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    /* パディングとボーダーを幅に含める */
+}
+
+
+
+
+
+/*---------------------------------Pance 4つの特徴---------------------------------*/
+
+.features-container-wrapper{
+    padding: 130px 0;
+}
+
+.features-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    min-height: 300px;
+    margin: 0 9%;
+    
+}
+
+.features-container h1 {
+    text-align: center;
+    color: black;
+}
+
+.feature-item div{
+    color: black;
+    margin: 15px 15px;
+}
+
+.feature-item {
+    border-radius: 15px;
+} 
+
+.feature-1 {
+    background-color: #F7B6B6;
+    box-shadow: #d99797 10px 10px;
+}
+
+.feature-2 {
+    background-color: #F5EDB2;
+    box-shadow: #aea271 10px 10px;
+}
+
+.feature-3 {
+    background-color: #C8DDF2;
+    box-shadow: #a0adca 10px 10px;
+}
+
+.feature-4 {
+    background-color: #DFEDE0;
+    box-shadow: #bed0b1 10px 10px;
+}
+
+/*---------------------------------Achivement---------------------------------*/
+
+/* 初期状態では非表示 */
+.achievement-list div {
+    opacity: 0;
+    transform: translateY(50px);
+    /* 下から50pxの位置に移動 */
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    /* アニメーションの設定 */
+}
+
+/* 表示させるときのスタイル */
+.achievement-list div.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.achievement-container {
+    padding: 0 9%;
+}
+
+.achievement-list div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: black 1px dotted;
+}
+
+.achievement-list li {
+    font-size: 35px;
+}
+
+
+.achievement-list {
+    margin-bottom: 30px;
+}
+
+.achievement-list span,
+.achievement-list section {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.achievement-list section {
+    margin-top: 40px;
+}
+
+/*合格実績の詳細*/
+
+.more-achivement {
+    text-decoration: none;
+}
+
+.more-achivement div {
+    color: black;
+    border: grey 1px solid;
+    padding: 15px 20px 15px 20px;
+    width: 120px;
+    text-align: center;
+}
+
+/* 初期状態では非表示 */
+.more-achivement div {
+    opacity: 0;
+    transform: translateY(50px);
+    /* 下から50pxの位置に移動 */
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    /* アニメーションの設定 */
+}
+
+/* 表示させるときのスタイル */
+.more-achivement div.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*---------------------------------Lesson---------------------------------*/
+
+.lesson-container {
+    margin: 0 9%;
+    margin-top: 130px;
+}
+
+.design-box {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.slide-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide div {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: #807878 1px dotted;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #FF7171;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator li {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
+/*---------------------------------コース案内-----------------------------*/
+.courses-container {
+    margin: 0 9%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.courses-container h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 4vw;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.course-button {
+    width: calc(40% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+    margin: 0 auto;
+    transition: transform 0.5s ease-out;
+    /* アニメーションのトランジションを追加 */
+}
+
+.course-button a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    text-align: center;
+    box-shadow: 15px 20px 18px rgba(99, 98, 98, 0.2);
+    transition: box-shadow 0.5s;
+    border-radius: 15px;
+}
+
+.course-button a:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.course-button a .course {
+    text-align: center;
+}
+
+.course img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.course h2 {
+    margin-top: 20px;
+    font-size: 3vw;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.label {
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    background-color: #7BADFC;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.label h3 {
+    margin: 0;
+}
+
+
+@media (max-width:  1000px) {
+    .course-button a {
+        padding: 40px;
+    }
+
+    .courses-container h1{
+        font-size: 11vw !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .course-button {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 400px) {
+    .course-button {
+        width: 100%;
+    }
+
+    .course-button {
+        margin-top: 60px;
+    }
+
+    .course h2 {
+        font-size: 10vw;
+    }
+}
+
+@media (max-width:  300px) {
+    .course-button a {
+        padding: 10px;
+    }
+
+    .label {
+        font-size: 9px;
+    }
+}
+
+
+/* スクロールしたら動くアニメーション */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}

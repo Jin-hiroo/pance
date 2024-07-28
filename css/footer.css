@@ -1,0 +1,87 @@
+      /*footer*/
+      footer {
+          background-color: #556D77;
+          color: white;
+      }
+
+      .footer-container {
+          padding: 30px 3%;
+      }
+
+      .footer-container li a {
+        color: white;
+        
+      }
+
+      .footer-container h1 {
+          border-bottom: 2px solid white;
+          width: 100%;
+          font-size: 45px;
+          font-weight: 500;
+      }
+
+      .footer-container-explain {
+          font-size: 25px;
+          margin-top: 3%;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .footer-container-explain ul {
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      .footer-container-explain ul.text {
+          text-align: left;
+      }
+
+      .footer-container-explain ul.img img {
+          width: 100px;
+          margin-top: 10px;
+          margin-left: 10px;
+          /* 右側のマージンを左側に変更 */
+          background-color: white;
+          border: white 10px solid;
+          border-radius: 15px;
+      }
+
+      .footer-container-explain ul.text li:first-child,
+      .footer-container-explain ul.img li:first-child {
+          font-weight: 600;
+          /* 一番上のli要素にフォントウェイトを設定 */
+      }
+
+      .footer-container-explain ul.text li:first-child,
+      .footer-container-explain ul.img:nth-child(n+2) li:first-child {
+          font-weight: 600;
+          /* 右側の2つのul要素の一番上のli要素にフォントウェイトを設定 */
+      }
+
+      .footer-container-explain ul:last-child {
+          margin-right: 0;
+      }
+
+      @media (max-width: 900px) {
+          .footer-container-explain {
+              flex-wrap: wrap;
+              /* 要素が折り返されるように flex-wrap を追加 */
+          }
+
+          .footer-container-explain ul.text,
+          .footer-container-explain ul.img {
+              width: 40%;
+              margin-top: 40px;
+              /* 幅が900px以下のとき、左側の2つのul要素を100%幅に設定 */
+          }
+
+          .footer-container-explain ul.img {
+              margin-top: 20px;
+              /* 右側のul要素の上マージンを追加 */
+          }
+
+          .footer-container-explain ul:nth-child(n+3) {
+              width: 40%;
+              /* 残りのul要素を2列目に配置 */
+          }
+      }
